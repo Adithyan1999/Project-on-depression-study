@@ -1,7 +1,6 @@
-package depression;
-
-import java.io.InputStreamReader; import java.io.BufferedReader; import java.io.IOException;
-
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+import java.io.IOException;
 public class Patient_Details
 {
 private String name;
@@ -66,8 +65,9 @@ public void setDetails() throws IOException {
 	System.out.println("Enter your gender");
 	setSex(br.readLine());
 	System.out.println("Enter the Date(Remember give it in dd/mm/yyyy format) and use '/' while typing date");
-	setDate(br.readLine());
-	br.close();
+	String f=br.readLine();
+	if(f.length()==12)
+	setDate(f);
 }
 public void printDetails() {
 	System.out.println("Name:"+getName());

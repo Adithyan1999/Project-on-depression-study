@@ -1,4 +1,3 @@
-package depression;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -26,5 +25,4 @@ choice = choice.toLowerCase();
 ch = choice.charAt(0);
 }while(ch=='y');
 }
-
 }
